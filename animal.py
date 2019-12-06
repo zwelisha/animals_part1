@@ -1,5 +1,5 @@
 class Animal:
-    def __init__(self, animal_name):
+    def __init__(self, animal_name="Animal"):
         self.__name = animal_name
 
     @property
@@ -9,7 +9,7 @@ class Animal:
     def name(self, name_value):
         self.__name = name_value
     def sound(self):
-        print("the animal sounds")
+        return animal_name
 
     def eat(self):
         print(name + "eats")
@@ -23,5 +23,8 @@ def main():
     animal.sound()
     animal.name = "kudu"
     print(animal.name)
+    print("CREATING a new object without a name")
+    kiwi = Animal()
+    print(kiwi.name)
 if __name__ == '__main__':
     main()
