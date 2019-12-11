@@ -5,26 +5,28 @@ class Animal:
     @property
     def name(self):
         return self.__name
+
     @name.setter
     def name(self, name_value):
         self.__name = name_value
+
     def sound(self):
-        return animal_name
+        print("sound...")
 
-    def eat(self):
-        print(name + "eats")
-
-
+    # def eat(self):
+    #     print(self.name + "eats")
 
 
-def main():
-    animal = Animal("cow")
-    print(animal.name)
-    animal.sound()
-    animal.name = "kudu"
-    print(animal.name)
-    print("CREATING a new object without a name")
-    kiwi = Animal()
-    print(kiwi.name)
-if __name__ == '__main__':
-    main()
+
+
+# def main():
+#     animal = Animal("cow")
+#     print(animal.name)
+#     animal.sound()
+#     animal.name = "kudu"
+#     print(animal.name)
+#     print("CREATING a new object without a name")
+#     kiwi = Animal()
+#     print(kiwi.name)
+# if __name__ == '__main__':
+#     main()
